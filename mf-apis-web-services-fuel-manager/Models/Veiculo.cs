@@ -3,7 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace mf_apis_web_services_fuel_manager.Models
 {
-    public class Veículo
+    [Table("Veiculos")]
+    public class Veiculo
     {
         [Key]
         public int Id { get; set; }
