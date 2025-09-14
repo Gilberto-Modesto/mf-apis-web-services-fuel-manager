@@ -43,6 +43,7 @@ namespace mf_apis_web_services_fuel_manager.Controllers
             var model = await _context.Veículos
                 .Include(t => t.Consumos)
                 .FirstOrDefaultAsync(c => c.Id == id);
+
             if (model == null) return NotFound();
 
             GerarLinks(model);

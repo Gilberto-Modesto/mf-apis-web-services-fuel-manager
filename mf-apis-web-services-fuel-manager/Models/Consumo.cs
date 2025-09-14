@@ -6,9 +6,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace mf_apis_web_services_fuel_manager.Models
 {
     [Table("Consumos")]
-    public class Consumo
+    public class Consumo : LinksHATEOS
     {
-        internal readonly object Links;
+        internal readonly object links;
+
+        // internal readonly object Links;
 
         [Key]
         public int Id { get; set; }
