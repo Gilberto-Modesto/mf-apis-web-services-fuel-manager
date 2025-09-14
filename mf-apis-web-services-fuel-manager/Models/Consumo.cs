@@ -8,6 +8,8 @@ namespace mf_apis_web_services_fuel_manager.Models
     [Table("Consumos")]
     public class Consumo
     {
+        internal readonly object Links;
+
         [Key]
         public int Id { get; set; }
         [Required]
